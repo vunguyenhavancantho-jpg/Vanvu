@@ -22,6 +22,7 @@ import {
   Wrench,
   BookOpen
 } from 'lucide-react';
+import gothicZombieBg from '../assets/images/gothic_zombie_academy_1790563492796.jpg';
 
 interface ZombieDefenseGameProps {
   questions: PuzzleQuestion[];
@@ -430,7 +431,7 @@ export const ZombieDefenseGame: React.FC<ZombieDefenseGameProps> = ({
         {/* Cinematic Backdrop Image with Muzzle Flash Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/gothic_zombie_academy_1790563492796.jpg"
+            src={gothicZombieBg}
             alt="Zombie Academy Battlefield"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-65 filter contrast-125"

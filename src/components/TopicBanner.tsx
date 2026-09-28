@@ -2,6 +2,7 @@ import React from 'react';
 import { TOPICS, TopicInfo } from '../data/puzzles';
 import { TopicId } from '../types/puzzle';
 import { Compass, BookOpen, Atom, Sparkles } from 'lucide-react';
+import defaultHallImage from '../assets/images/antique_academy_hall_1790562697638.jpg';
 
 interface TopicBannerProps {
   selectedTopic: TopicId | 'all';
@@ -26,7 +27,7 @@ export const TopicBanner: React.FC<TopicBannerProps> = ({
           src={
             currentTopicInfo
               ? currentTopicInfo.bannerImage
-              : '/src/assets/images/antique_academy_hall_1790562697638.jpg'
+              : defaultHallImage
           }
           alt="Viện Hàn Lâm Học Thuật Cổ Điển"
           referrerPolicy="no-referrer"

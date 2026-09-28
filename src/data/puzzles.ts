@@ -1,4 +1,7 @@
 import { PuzzleQuestion, TopicId } from '../types/puzzle';
+import mathBanner from '../assets/images/topic_mathematics_geometry_1790562711534.jpg';
+import koreanBanner from '../assets/images/topic_korean_linguistics_1790562724694.jpg';
+import physicsBanner from '../assets/images/topic_physics_laboratory_1790562736366.jpg';
 
 export interface TopicInfo {
   id: TopicId;
@@ -19,7 +22,7 @@ export const TOPICS: Record<TopicId, TopicInfo> = {
     symbol: '📐',
     tagline: 'Hình học hoàng gia, mật mã số học & nghịch lý vô hạn',
     description: 'Khám phá di sản toán học từ Euclid, Euler đến Fermat. Giải mã các bài toán logic hình học, chuỗi số Fibonacci và xác suất phục hưng.',
-    bannerImage: '/src/assets/images/topic_mathematics_geometry_1790562711534.jpg',
+    bannerImage: mathBanner,
     iconName: 'Compass',
   },
   korean: {
@@ -29,7 +32,7 @@ export const TOPICS: Record<TopicId, TopicInfo> = {
     symbol: '📜',
     tagline: 'Triết lý Hunminjeongeum, cấu trúc ngôn ngữ & cổ thư Chosun',
     description: 'Thâm nhập vào hệ thống văn tự khoa học bậc nhất thế giới do vua Sejong sáng chế: triết lý Tam Tài Âm Dương, biến hình tượng thanh và từ vựng Hán - Hàn uyên bác.',
-    bannerImage: '/src/assets/images/topic_korean_linguistics_1790562724694.jpg',
+    bannerImage: koreanBanner,
     iconName: 'Scroll',
   },
   physics: {
@@ -39,7 +42,7 @@ export const TOPICS: Record<TopicId, TopicInfo> = {
     symbol: '⚖️',
     tagline: 'Quang học lăng kính, đòn bẩy Archimedes & chuyển động Galileo',
     description: 'Lần theo dấu chân của những triết gia tự nhiên vĩ đại. Đo lường vũ trụ bằng con lắc Foucault, khúc xạ ánh sáng và những định luật vĩnh cửu.',
-    bannerImage: '/src/assets/images/topic_physics_laboratory_1790562736366.jpg',
+    bannerImage: physicsBanner,
     iconName: 'Atom',
   },
 };
