@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-garamond: 'EB Garamond', serif;
+    --font-kr: 'Noto Serif KR', serif;
+  }
+  
+  body {
+    font-family: 'EB Garamond', serif;
+    background-color: #120e0b;
+    color: #ede2ce;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-garamond {
+  font-family: 'EB Garamond', serif;
+}
+
+.font-kr {
+  font-family: 'Noto Serif KR', serif;
+}
+
+/* Custom antique parchment and filigree utilities */
+.parchment-bg {
+  background-color: #f7f1e1;
+  background-image: 
+    radial-gradient(rgba(180, 150, 110, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, #fdfaf3 0%, #f4ebd6 100%);
+  background-size: 16px 16px, 100% 100%;
+}
+
+.dark-academy-panel {
+  background: linear-gradient(180deg, rgba(29, 23, 18, 0.96) 0%, rgba(18, 14, 11, 0.99) 100%);
+  border: 1px solid rgba(184, 142, 74, 0.28);
+  box-shadow: 0 12px 36px -6px rgba(0, 0, 0, 0.65), inset 0 0 1px 1px rgba(212, 175, 55, 0.12);
+}
+
+.gold-border {
+  border: 1px solid rgba(194, 153, 85, 0.35);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px -5px rgba(201, 154, 78, 0.25);
+}
+
+/* Custom classical scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #140f0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #3e3022;
+  border-radius: 4px;
+  border: 1px solid #5d4834;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7a5e42;
+}

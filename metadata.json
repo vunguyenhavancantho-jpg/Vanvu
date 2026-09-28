@@ -1,0 +1,6 @@
+{
+  "name": "Academia Enigma: Giải Đố Cổ Điển",
+  "description": "Game giải đố trí tuệ phong cách cổ điển châu Âu thế kỷ 18 với các kho tàng câu hỏi Toán học, Tiếng Hàn và Vật lý.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
